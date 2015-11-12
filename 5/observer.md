@@ -10,3 +10,15 @@
 # メリット
 - オブジェクト間の依存度を下げることが出来る
 - 通知先の管理をオブザーバーが行うことで、サブジェクトは通知側を意識しなくていい。
+
+# 咀嚼
+順序依存関係をうまくほぐしている。
+Employeeへの観測者オブジェクトをObserversに仕込んでおく。
+Employeeの状態が変わる。
+Employeeの状態が変わったら、共通のメソッドnotify_observersという共通のインターフェイスによって、Observersオブジェクトに対して処理を実行する。
+
+# Observable
+http://docs.ruby-lang.org/ja/2.0.0/class/Observable.html
+
+# 出るメルの法則
+「あるオブジェクトA(Result)は別のオブジェクトB(Answer)のサービスを要求してもよい（メソッドを呼び出してもよい）が、オブジェクトA(Result)がオブジェクトB(Answer)を「経由して」さらに別のオブジェクトC(Question)のサービスを要求してはならない。」
