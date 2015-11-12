@@ -1,5 +1,4 @@
-# Template Methodパターンは、アルゴリズムに多態性を持たせたい場合に有効。
-# Template Methodの具象クラスによってオーバーライドできる非抽象メソッドをフックメソッド という。
+
 
 
 # abstract_class
